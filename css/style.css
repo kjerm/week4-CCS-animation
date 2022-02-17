@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Gideon+Roman&family=Raleway:ital,wght@1,200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: bor;
+
+}
+
+
+body{
+    background-color: rgb(122, 112, 114);
+    overflow: hidden;
+}
+
+.container{
+    width: 45%;
+    margin: 32px auto;
+    
+}
+
+.header{
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    color: rgba(0, 0, 0, 0.527);
+    font-size: 3.5rem;
+    font-family: 'Akaya Telivigala', cursive;
+    position: relative; /**top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes header {
+    0%{top: -250px}
+    100%{top: 100px}
+
+    
+}
+
+.main{
+    color: rgb(192, 192, 189);
+    font-family: 'Raleway', sans-serif;
+    line-height: 1,8;
+
+}
+
+.text-left{
+    position: relative;
+    animation: textLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px}
+    85% {left: 50px;}
+    100% {left:0}
+}
+
+.text-right{
+    margin-top: 32px;
+    position: relative;
+    text-align: right;
+    animation: textRight;
+    animation-duration: 5s;
+    
+}
+@keyframes textRight {
+    0% {right: -1000px}
+    85% {right: 50px;}
+    100% {right:0}
+}
+
+.footer{
+    text-align: center;
+
+}
+.btn{
+    opacity: 0;
+    border: 2px solid rgb(160, 145, 145);
+    color: rgb(188, 201, 201);
+    size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation: aniBtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes aniBtn {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
